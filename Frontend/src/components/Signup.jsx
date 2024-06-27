@@ -24,7 +24,7 @@ function Signup() {
       email:data.email,
       password:data.password
     }
-   await axios.post("http://localhost:8000/user/v2/signup",userInfo)
+   await axios.post("https://ecommerce-app-1-yt2q.onrender.com/user/v2/signup",userInfo)
      .then((res)=>{
       console.log(res.data)
       if(res.data){

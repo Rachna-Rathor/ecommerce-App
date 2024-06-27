@@ -8,7 +8,7 @@ function Shop() {
   useEffect(()=>{
     const getShop=async()=>{
       try {
-        const res=await axios.get("http://localhost:8000/item/v1/getItem")
+        const res=await axios.get("https://ecommerce-app-1-yt2q.onrender.com/item/v1/getItem")
         console.log(res.data)
         setshop(res.data)
       } catch (error) {

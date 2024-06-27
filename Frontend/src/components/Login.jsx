@@ -20,7 +20,7 @@ function Login() {
 
     try {
       const res = await axios.post(
-        "http://localhost:8000/user/v2/login",
+        "https://ecommerce-app-1-yt2q.onrender.com/user/v2/login",
         userInfo
       );
       console.log(res.data);
