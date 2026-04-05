@@ -1,20 +1,18 @@
-const mongoose=require('mongoose');
-
+const mongoose = require('mongoose');
 require("dotenv").config();
 
-const dbConnect=()=>{
-    mongoose.connect(process.env.DATABASE_URL,{
-        // useNewUrlParser:true,
-        // useUnifiedTopology:true,
-    })
-    .then(()=> console.log("DB ka connection is successful"))
-    .catch((err)=>{
-        console.log("issue in DB connection");
-        console.log(err.message);
-        // process.exit(1);
-    });
+const dbConnect = async () => {
+    try {
+        await mongoose.connect(process.env.DATABASE_URL, {
+            useNewUrlParser: true,
+            useUnifiedTopology: true
+        });
+        console.log("DB connected successfully");
+    } catch (error) {
+        console.log("Issue in DB connection");
+        console.log(error.message);
+        process.exit(1);
+    }
 }
 
-module.exports=dbConnect;
-
-// https://ecommerce-app-1-yt2q.onrender.com
+module.exports = dbConnect;
