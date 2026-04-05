@@ -1,17 +1,21 @@
-import React from 'react'
+import React, { useState } from 'react'
 import NavBar from '../components/NavBar'
 import Banner from '../components/Banner'
 import Card from '../components/Card'
 import Footer from '../components/Footer'
 
 
+
 function Home() {
+
+  // search function
+    const [search, setSearch] = useState(" ");
   return (
     <>
 
-     <NavBar/>
+     <NavBar setSearch={setSearch}/>
      <Banner/>
-     <Card/>
+     <Card search={search}/>
      <Footer/>
     </>
   )

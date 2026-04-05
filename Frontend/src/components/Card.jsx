@@ -1,60 +1,65 @@
-
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
-import React, { useEffect, useState } from 'react'
-import axios from "axios"
-
-// import data from "../data/data";
+import React, { useEffect, useState } from "react";
+import axios from "axios";
 import MainCard from "./MainCard";
+import NotFound from "./NotFound";
 
-function Card() {
-   
-  const [shop,setshop]=useState([])
-  useEffect(()=>{
-    const getShop=async()=>{
+function Card({ search }) {
+  const [cart, setCart] = useState([]);
+  const [shop, setShop] = useState([]);
+
+  // Handle click to add items to the cart
+  const handleClick = (item) => {
+    console.log(item); // Verify it's working
+    setCart((prevCart) => [...prevCart, item]); // Add item to the cart
+  };
+
+  // Fetch data from backend and filter based on category or search
+  useEffect(() => {
+    const getShop = async () => {
       try {
-        const res=await axios.get("https://ecommerce-app-1-yt2q.onrender.com/item/v1/getItem")
-        console.log(res.data)
-        const filteredData = res.data.filter(item => item.category === 'free');
+        const res = await axios.get(
+          "https://ecommerce-app-1-yt2q.onrender.com/item/v1/getItem"
+        );
+        console.log(res.data);
 
-        setshop(filteredData)
+        let filteredData = res.data.filter((item) => item.category === "free");
+
+        if (search) {
+          filteredData = filteredData.filter(
+            (item) =>
+              item.name.toLowerCase().includes(search.toLowerCase()) ||
+              item.description.toLowerCase().includes(search.toLowerCase())
+          );
+        }
+        setShop(filteredData);
       } catch (error) {
-        console.log(error);
+        console.error("Error fetching data:", error);
       }
-    }
+    };
+
     getShop();
-  },[])
+  }, [search]); // Runs when `search` changes
 
-
-
-  var settings = {
+  // Slider settings
+  const settings = {
     dots: true,
-    infinite: false,
+    infinite: true,
     speed: 500,
-    slidesToShow: 3,
-    slidesToScroll: 3,
-    initialSlide: 0,
+    slidesToShow: 4,
+    slidesToScroll: 1,
     responsive: [
       {
         breakpoint: 1024,
         settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2,
-          infinite: true,
-          dots: true,
+          slidesToShow: 3,
+          slidesToScroll: 1,
         },
       },
       {
         breakpoint: 600,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2,
-          initialSlide: 2,
-        },
-      },
-      {
-        breakpoint: 480,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
@@ -62,34 +67,32 @@ function Card() {
       },
     ],
   };
-  // const dataList = data.filter((list) => list.category === "free");
-  // console.log(dataList);
+
   return (
     <div>
       <div className="flex flex-col justify-center items-center text-center mt-12">
-        {" "}
-        {/* Use h-screen to make div take full viewport height */}
         <div className="font-bold text-black text-3xl mb-2">
-          {" "}
-          {/* Add margin-bottom to space out text and progress bar */}
           Featured Categories
         </div>
         <progress
-          className="progress w-56 h-2 bg-orange-500 rounded-full mb-10" // Removed unnecessary classes
+          className="progress w-56 h-2 bg-orange-500 rounded-full mb-10"
           value={0}
           max={100}
         />
       </div>
 
-      {/* slider */}
-      <div className="max-w-screen-2xl container max-auto md:px-20 px-4">
-        <div className="slider-container">
-          <Slider {...settings}>
-           {shop.map((item)=>(
-            <MainCard item={item} />
-           ))}
-          </Slider>
-        </div>
+      <div className="max-w-screen-2xl container mx-auto md:px-20 px-4">
+        {shop.length > 0 ? (
+          <div className="slider-container">
+            <Slider {...settings}>
+              {shop.map((item) => (
+                <MainCard key={item.id || item._id} item={item} handleClick={handleClick} />
+              ))}
+            </Slider>
+          </div>
+        ) : (
+          <NotFound />
+        )}
       </div>
     </div>
   );

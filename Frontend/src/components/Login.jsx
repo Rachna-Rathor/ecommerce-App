@@ -19,13 +19,18 @@ function Login() {
     };
 
     try {
-      const res = await axios.post(
-        "https://ecommerce-app-1-yt2q.onrender.com/user/v2/login",
+      const res = await axios.post( "http://localhost:8000/user/v2/login",
         userInfo
       );
+       
+      // const res = await axios.post(
+      //   "https://ecommerce-app-1-yt2q.onrender.com/user/v2/login",
+      //   userInfo
+      // );
       console.log(res.data);
       if (res.data) {
         toast.success("Login successfully");
+
         document.getElementById("my_modal_3").close();
 
         setTimeout(() => {

@@ -11,9 +11,11 @@ function Women() {
   useEffect(()=>{
     const getShop=async()=>{
       try {
-        const res=await axios.get("https://ecommerce-app-1-yt2q.onrender.com/item/v1/getItem")
+                const res=await axios.get("http://localhost:8000/item/v1/getItem")
+
+        // const res=await axios.get("https://ecommerce-app-1-yt2q.onrender.com/item/v1/getItem")
         // console.log(res.data)
-        const filteredData = res.data.filter(item => item.gender === 'women');
+        const filteredData = res.data.filter(item => item.gender.toLowerCase() === 'female');
 
         setshop(filteredData)
       } catch (error) {
@@ -36,7 +38,7 @@ function Women() {
         />
         <div className='mt-10 grid md:grid-cols-3 grid-cols-1'>
         {shop.map((item) => (
-            <MainCard item={item} />
+            <MainCard key={item.id} item={item} />
           ))}
         </div>
       </div>

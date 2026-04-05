@@ -1,8 +1,8 @@
 import axios from "axios"
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 
 import MainCard from './MainCard';
-// import dataList from '../data/data'
+import dataList from '../data/data'
 
 
 function Kidses() {
@@ -11,11 +11,11 @@ function Kidses() {
   useEffect(()=>{
     const getShop=async()=>{
       try {
-        // const res=await axios.get("http://localhost:8000/item/v1/getItem")
-       const res=await axios.get("https://ecommerce-app-1-yt2q.onrender.com/item/v1/getItem")
+        const res=await axios.get("http://localhost:8000/item/v1/getItem")
+      //  const res=await axios.get("https://ecommerce-app-1-yt2q.onrender.com/item/v1/getItem")
 
         console.log(res.data)
-        const filteredData = res.data.filter(item => item.gender === 'kids');
+        const filteredData = res.data.filter(item => item.gender.toLowerCase() === 'kids');
 
         setshop(filteredData)
       } catch (error) {
