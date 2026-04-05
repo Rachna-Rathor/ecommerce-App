@@ -58,15 +58,15 @@ A full-stack E-Commerce web application with authentication, product management,
 ## 📁 Project Structure
 project/
 ├── backend/
-│ ├── controllers/
-│ ├── models/
-│ ├── routes/
-│ └── server.js
+│   ├── controllers/
+│   ├── models/
+│   ├── routes/
+│   └── server.js
 │
 ├── frontend/
-│ ├── components/
-│ ├── pages/
-│ └── App.js
+│   ├── components/
+│   ├── pages/
+│   └── App.js
 
 
 ---
