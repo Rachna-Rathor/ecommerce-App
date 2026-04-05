@@ -56,6 +56,8 @@ A full-stack E-Commerce web application with authentication, product management,
 ---
 
 ## 📁 Project Structure
+
+```bash
 project/
 ├── backend/
 │   ├── controllers/
@@ -67,7 +69,6 @@ project/
 │   ├── components/
 │   ├── pages/
 │   └── App.js
-
 
 ---
 
