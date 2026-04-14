@@ -115,20 +115,20 @@ Wishlist Feature
 ---
 ## 📸 Screenshots
 
-### Home Page
-![Home](https://raw.githubusercontent.com/Rachna-Rathor/ecommerce-App/main/screenshots/home.png)
+### 🏠 Home Page
+<img width="1920" height="1080" alt="Home" src="https://github.com/user-attachments/assets/de9f8583-0f1d-464a-beaf-c7751e08f28f" />
 
-### Login
-![Login](https://raw.githubusercontent.com/Rachna-Rathor/ecommerce-App/main/screenshots/login.png)
+### 🔐 Login
+<img width="1920" height="1080" alt="Login" src="https://github.com/user-attachments/assets/95d4d842-5638-4b37-ab50-edc9bd6cda35" />
 
-### Signup
-![Signup](https://raw.githubusercontent.com/Rachna-Rathor/ecommerce-App/main/screenshots/signup.png)
+### 📝 Signup
+<img width="1920" height="1080" alt="Signup" src="https://github.com/user-attachments/assets/b462b414-f7ad-476b-8b62-ebab5e196d68" />
 
-### Men's Collection
-![Mens](https://raw.githubusercontent.com/Rachna-Rathor/ecommerce-App/main/screenshots/mens.png)
+### 👔 Men's Collection
+<img width="1920" height="1080" alt="Mens" src="https://github.com/user-attachments/assets/e8dc7211-b1bb-42bc-aafd-a770e3006e21" />
 
-### Women's Collection
-![Females](https://raw.githubusercontent.com/Rachna-Rathor/ecommerce-App/main/screenshots/femals.png)
+### 👗 Women's Collection
+<img width="1920" height="1080" alt="Females" src="https://github.com/user-attachments/assets/c953d604-b13d-4834-8ae4-b4a3d9c96c66" />
 
-### Kids Collection
-![Kids](https://raw.githubusercontent.com/Rachna-Rathor/ecommerce-App/main/screenshots/kids.png)
+### 👦 Kids Collection
+<img width="1920" height="1080" alt="Kids" src="https://github.com/user-attachments/assets/061bc2eb-a9da-4431-b0cf-7a5578657221" />
