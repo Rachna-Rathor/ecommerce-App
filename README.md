@@ -114,6 +114,10 @@ Admin Dashboard
 Wishlist Feature
 ---
 ## 📸 Screenshots
-<img width="1596" height="805" alt="Screenshot 2026-04-14 141856" src="https://github.com/user-attachments/assets/f2d0fcfb-62de-4229-9f3a-97847d0cba8d" />
+<img width="1599" height="807" alt="Screenshot 2026-04-14 142006" src="https://github.com/user-attachments/assets/ca0a3767-ecfe-4fdb-845f-2a64305e92bf" />
+<img width="1583" height="811" alt="Screenshot 2026-04-14 141834" src="https://github.com/user-attachments/assets/d21ef2f9-327b-4e9f-a954-14917316b00f" />
+<img width="1594" height="799" alt="Screenshot 2026-04-14 141921" src="https://github.com/user-attachments/assets/3ddf7d2f-eb04-459a-a52b-33b29beb7f9b" />
+<img width="1582" height="809" alt="Screenshot 2026-04-14 141947" src="https://github.com/user-attachments/assets/b6790dad-a18b-4430-8ed7-8c6ee659895f" />
+<img width="1596" height="805" alt="Screenshot 2026-04-14 141856" src="https://github.com/user-attachments/assets/c70c0760-f5b2-4b9d-b988-f2c20c1ad143" />
 
 
