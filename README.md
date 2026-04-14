@@ -113,9 +113,6 @@ Order Management System
 Admin Dashboard
 Wishlist Feature
 ---
-
-## 📸 Screenshots
-
 ## 📸 Screenshots
 
 ### Home Page
