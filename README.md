@@ -116,19 +116,19 @@ Wishlist Feature
 ## 📸 Screenshots
 
 ### Home Page
-![Home](./screenshots/home.png)
+![Home](https://raw.githubusercontent.com/Rachna-Rathor/ecommerce-App/main/screenshots/home.png)
 
 ### Login
-![Login](./screenshots/login.png)
+![Login](https://raw.githubusercontent.com/Rachna-Rathor/ecommerce-App/main/screenshots/login.png)
 
 ### Signup
-![Signup](./screenshots/signup.png)
+![Signup](https://raw.githubusercontent.com/Rachna-Rathor/ecommerce-App/main/screenshots/signup.png)
 
 ### Men's Collection
-![Mens](./screenshots/mens.png)
+![Mens](https://raw.githubusercontent.com/Rachna-Rathor/ecommerce-App/main/screenshots/mens.png)
 
 ### Women's Collection
-![Females](./screenshots/femals.png)
+![Females](https://raw.githubusercontent.com/Rachna-Rathor/ecommerce-App/main/screenshots/femals.png)
 
 ### Kids Collection
-![Kids](./screenshots/kids.png)
+![Kids](https://raw.githubusercontent.com/Rachna-Rathor/ecommerce-App/main/screenshots/kids.png)
