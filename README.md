@@ -114,17 +114,5 @@ Admin Dashboard
 Wishlist Feature
 ---
 ## 📸 Screenshots
-
-### 🏠 Home Page
-![image alt](https://github.com/Rachna-Rathor/ecommerce-App/blob/692c561601c3fa7bef323940745c37774f98ded1/home.png)
-
-### 🔐 Login
-
-### 📝 Signup
-
-
-### 👔 Men's Collection
-
-### 👗 Women's Collection
-
-### 👦 Kids Collection
+<img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/d6eef96d-aa9c-444b-8fe4-3d698e6a78d6" />
+<img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/f58e7ebf-916e-41e7-8850-79be10db5fd6" />
