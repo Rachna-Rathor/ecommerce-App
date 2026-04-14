@@ -114,5 +114,6 @@ Admin Dashboard
 Wishlist Feature
 ---
 ## 📸 Screenshots
-<img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/d6eef96d-aa9c-444b-8fe4-3d698e6a78d6" />
-<img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/f58e7ebf-916e-41e7-8850-79be10db5fd6" />
+<img width="1583" height="811" alt="Image" src="https://github.com/user-attachments/assets/df94fcb7-2574-41c7-8d4e-8cd5bdab3ab8" />
+![Image Alt](https://github.com/Rachna-Rathor/ecommerce-App/blob/main/signup.png?raw=true)
+
