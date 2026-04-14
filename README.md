@@ -116,7 +116,7 @@ Wishlist Feature
 ## 📸 Screenshots
 
 ### 🏠 Home Page
-<img width="1920" height="1080" alt="Home" src="https://github.com/user-attachments/assets/de9f8583-0f1d-464a-beaf-c7751e08f28f" />
+![image alt](https://github.com/Rachna-Rathor/ecommerce-App/blob/fbeb5405974c8b0227d658f144eb9c562ace03ff/home.png)
 
 ### 🔐 Login
 <img width="1920" height="1080" alt="Login" src="https://github.com/user-attachments/assets/95d4d842-5638-4b37-ab50-edc9bd6cda35" />
